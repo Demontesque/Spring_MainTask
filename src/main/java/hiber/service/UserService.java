@@ -1,0 +1,13 @@
+package hiber.service;
+
+import hiber.model.User;
+
+import java.util.List;
+
+public interface UserService {
+    void addUser(User user);
+    User getUserById(Long id);
+    void updateUser(User user);
+    void deleteUserById(Long id);
+    List<User> listUsers();
+}
